@@ -7,7 +7,7 @@ var userClickedPattern = [];
 
 
 
-$(document).keypress(function() {
+$(document).click(function() {
     
     if (!start) {
         $("#instructionsOrScore").text("Level " + level);
