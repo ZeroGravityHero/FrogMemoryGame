@@ -1,0 +1,124 @@
+body {
+    background-image: url("./images/space.jpg");
+
+}
+
+#container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    min-height: 100vh;
+    position: relative;
+}
+
+h1 {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    color: yellow;
+    font-family: 'Press Start 2P', cursive;
+    font-size: 1.5rem;
+}
+
+h3 {
+    display: flex;
+    justify-content: center;
+    color: white;
+    text-align: center;
+    font-family: 'Press Start 2P', cursive;  
+    font-size: 1rem;
+    max-width: 50rem;
+    line-height: 1.5rem;
+    margin: 0 auto;
+}
+
+h2 {
+    display: flex;
+    justify-content: center;
+    color: white;
+}
+
+#frogGroup1 {
+    display: flex;
+    justify-content: center;
+    gap: 5rem;
+    overflow: hidden;
+    margin-right: 20px;
+
+}
+
+#frogGroup2 {
+    display: flex;
+    justify-content: center;
+    gap: 5rem;
+    overflow: hidden;
+}
+
+.frogFace {
+    width: 10rem;
+    object-fit: contain;
+}
+
+#white {
+
+}
+
+#blue {
+
+}
+
+#orange {
+
+}
+
+#green {
+
+}
+
+
+#yellow {
+
+}
+
+.pressed {
+    flex-shrink: 0;
+    box-shadow: 0 0 20px  rgb(67, 228, 52);
+    border-radius: 50%;
+    background-color: rgb(67, 228, 52);
+    width: 9rem;
+    height: 9rem;
+    transition: width 0.5s, height 0.5s;
+    overflow: hidden;
+  }
+
+.pressed2 {
+flex-shrink: 0;
+box-shadow: 0 0 20px  rgb(79, 119, 250);
+border-radius: 50%;
+background-color: rgb(79, 119, 250);
+width: 9rem;
+height: 9rem;
+transition: width 0.5s, height 0.5s;
+overflow: hidden;
+}
+
+  /* .game-over {
+    background-color: red;
+    opacity: 0.8;
+  } */
+
+ #overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: red;
+  opacity: 0.2;
+  z-index: 999; /* Ensure it's on top of other elements */
+  display: none; /* Initially hide the overlay */
+} 
+
+.game-over #overlay {
+    display: block; /* Show the overlay when the game-over class is applied */
+  }
